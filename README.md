@@ -42,6 +42,4 @@ A simple blog app written with Django.
 11. Sync [travis](travis-ci.org) with git repository by clicking on `build unknown` and copy text for markdown and paste into README file
 12. create new file to integrate with travis called `.travis.yml`
 
-
-
-[![Build Status](https://travis-ci.org/danielsky81/django-blog.svg?branch=master)](https://travis-ci.org/danielsky81/django-blog)
+[![Build Status](https://travis-ci.com/danielsky81/django_blog_app.svg?branch=master)](https://travis-ci.com/danielsky81/django_blog_app)
