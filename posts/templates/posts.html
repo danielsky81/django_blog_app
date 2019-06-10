@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Futura;
+            width: 80vw;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            padding-top: 10px;
+        }
+        h1 {
+            color: turquoise;
+        }
+        h3 {
+            color: grey;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1>Here are the posts:</h1>
+    {% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <p>{{ post.created_date }}</p>
+    {% empty %}
+    <h3>There are no posts I'm araid :|</h3>
+    {% endfor %}
 </body>
 </html>

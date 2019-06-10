@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .models import Post
 
 # Create your views here.
 def get_todo_list(request):
-    return render(request, 'posts.html')
+    results = Post.objects.all()
+    return render(request, 'posts.html', {'posts': results})
